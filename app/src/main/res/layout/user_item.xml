@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:elevation="10dp"
+    android:backgroundTint="@color/white"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/cardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/image_placeholder"
+            android:layout_centerVertical="true"
+            android:background="@drawable/background_outline"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgProfile"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Username"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/textAgeGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age, Gender"
+                android:textSize="16dp"
+                android:textColor="@color/dark_color" />
+
+            <TextView
+                android:id="@+id/textHobbyProfession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hobby, Profession"
+                android:textSize="16dp"
+                android:textColor="@color/dark_color" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/editIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/background_primary"
+            android:padding="7.5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_edit" />
+
+        <ImageButton
+            android:id="@+id/deleteIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/background_primary"
+            android:padding="7.5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_delete" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
