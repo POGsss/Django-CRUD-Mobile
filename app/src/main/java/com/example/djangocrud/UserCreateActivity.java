@@ -1,7 +1,8 @@
 package com.example.djangocrud;
 
+import android.view.View;
+import android.widget.*;
 import android.os.Bundle;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -9,6 +10,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class UserCreateActivity extends AppCompatActivity {
+    // Declaration
+    ImageButton btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +24,15 @@ public class UserCreateActivity extends AppCompatActivity {
             return insets;
         });
 
+        // Initialization
+        btnBack = findViewById(R.id.btnBack);
 
+        // Event Listener
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 }
