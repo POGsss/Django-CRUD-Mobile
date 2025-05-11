@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_color"
-    tools:context=".UserCreateActivity"
+    tools:context=".UserUpdateActivity"
     android:id="@+id/main" >
 
     <RelativeLayout
@@ -97,7 +97,7 @@
             android:paddingRight="20dp"
             android:background="@drawable/background_primary"
             android:drawableRight="@drawable/icon_check"
-            android:text="Create User" />
+            android:text="Update User" />
 
     </LinearLayout>
 

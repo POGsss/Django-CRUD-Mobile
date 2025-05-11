@@ -3,6 +3,7 @@ package com.example.djangocrud;
 import java.util.List;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Multipart;
 import retrofit2.http.Part;
@@ -19,9 +20,9 @@ public interface ApiService {
     @POST("user/create/")
     Call<UserModel> createUser(
             @Part MultipartBody.Part profile_picture,
-            @Part("age") RequestBody age,
-            @Part("gender") RequestBody gender,
             @Part("name") RequestBody name,
+            @Part("gender") RequestBody gender,
+            @Part("age") RequestBody age,
             @Part("hobby") RequestBody hobby,
             @Part("profession") RequestBody profession
     );

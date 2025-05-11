@@ -4,20 +4,20 @@ public class UserModel {
     // Properties
     int id;
     String profile_picture;
-    int age;
-    String gender;
     String name;
+    String gender;
+    String age;
     String hobby;
     String profession;
 
     // Constructor
-    public UserModel(int id, String profile_picture, int age, String gender, String hobby, String name, String profession) {
+    public UserModel(int id, String profile_picture, String name, String gender, String age, String hobby, String profession) {
         this.id = id;
         this.profile_picture = profile_picture;
-        this.age = age;
-        this.gender = gender;
-        this.hobby = hobby;
         this.name = name;
+        this.gender = gender;
+        this.age = age;
+        this.hobby = hobby;
         this.profession = profession;
     }
 
@@ -38,12 +38,12 @@ public class UserModel {
         this.profile_picture = profile_picture;
     }
 
-    public int getAge() {
-        return age;
+    public String getName() {
+        return name;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getGender() {
@@ -54,12 +54,12 @@ public class UserModel {
         this.gender = gender;
     }
 
-    public String getName() {
-        return name;
+    public String getAge() {
+        return age;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setAge(String age) {
+        this.age = age;
     }
 
     public String getHobby() {
