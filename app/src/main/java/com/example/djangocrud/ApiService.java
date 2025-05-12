@@ -40,9 +40,9 @@ public interface ApiService {
     Call<UserModel> updateUser(
             @Path("id") int id,
             @Part MultipartBody.Part profile_picture,
-            @Part("age") RequestBody age,
-            @Part("gender") RequestBody gender,
             @Part("name") RequestBody name,
+            @Part("gender") RequestBody gender,
+            @Part("age") RequestBody age,
             @Part("hobby") RequestBody hobby,
             @Part("profession") RequestBody profession
     );

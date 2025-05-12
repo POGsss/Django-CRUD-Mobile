@@ -75,9 +75,6 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-        // Call Fetch Methods
-        fetchUser();
     }
 
     // Fetch Method
@@ -142,5 +139,12 @@ public class MainActivity extends AppCompatActivity {
                 Log.e("MainActivity", "Error: " + throwable.getMessage());
             }
         });
+    }
+
+    // On Start Method
+    @Override
+    protected void onStart() {
+        super.onStart();
+        fetchUser();
     }
 }
