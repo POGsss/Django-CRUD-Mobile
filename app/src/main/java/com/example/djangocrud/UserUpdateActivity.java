@@ -13,15 +13,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
 import com.bumptech.glide.Glide;
-
 import java.io.InputStream;
-
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -140,6 +136,7 @@ public class UserUpdateActivity extends AppCompatActivity {
                     Toast.makeText(UserUpdateActivity.this, "User updated successfully", Toast.LENGTH_SHORT).show();
                     finish();
                 } else {
+                    Log.e("UserUpdateActivity", "Error: " + response.code());
                     Toast.makeText(UserUpdateActivity.this, "Failed to update user", Toast.LENGTH_SHORT).show();
                 }
             }
